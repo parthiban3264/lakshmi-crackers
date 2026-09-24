@@ -1,16 +1,8 @@
+import ContactSection from "../components/ContactSection";
+import OfferBanners from "../components/OfferBanners";
+import PopularCrackers from "../components/PopularCrackers";
+
 const navItems = ["Home", "About", "List", "Contact", "Latest Offers"];
-
-const categories = [
-  { title: "Family Packs", text: "Curated festive combinations for joyful celebrations." },
-  { title: "Sparkling Fountains", text: "High-impact visuals with safe and vibrant flame effects." },
-  { title: "Kids Crackers", text: "Colorful and playful options for a cheerful family gathering." },
-];
-
-const offers = [
-  { name: "Diwali Deluxe Combo", price: "₹1,299", tag: "Best Seller" },
-  { name: "Festival Family Box", price: "₹2,499", tag: "Limited Time" },
-  { name: "Sparkler Special Pack", price: "₹699", tag: "New Arrival" },
-];
 
 export default function Home() {
   return (
@@ -102,29 +94,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="list" className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
-          <div className="mb-8 text-center">
-            <p className="text-sm font-bold uppercase tracking-[0.24em] text-orange-600">Our Collection</p>
-            <h2 className="mt-3 text-3xl font-black text-stone-900 sm:text-4xl">
-              Crackers for every celebration
-            </h2>
-          </div>
-
-          <div className="grid gap-6 md:grid-cols-3">
-            {categories.map((category, index) => (
-              <article
-                key={category.title}
-                className="rounded-[2rem] border border-orange-100 bg-white p-6 shadow-[0_18px_45px_rgba(120,53,15,0.08)] transition hover:-translate-y-1 hover:shadow-[0_20px_50px_rgba(120,53,15,0.12)]"
-              >
-                <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-orange-100 to-red-100 text-2xl">
-                  {index === 0 ? "🎆" : index === 1 ? "✨" : "🎇"}
-                </div>
-                <h3 className="text-xl font-black text-stone-900">{category.title}</h3>
-                <p className="mt-3 text-base leading-7 text-stone-600">{category.text}</p>
-              </article>
-            ))}
-          </div>
-        </section>
+        <PopularCrackers />
 
         <section id="about" className="bg-[#1d120b] py-16 text-white">
           <div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[1fr_1.1fr] lg:px-8">
@@ -155,67 +125,9 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="offers" className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
-          <div className="mb-8 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
-            <div>
-              <p className="text-sm font-bold uppercase tracking-[0.24em] text-orange-600">Latest offers</p>
-              <h2 className="mt-3 text-3xl font-black text-stone-900 sm:text-4xl">
-                Best deals this festive season
-              </h2>
-            </div>
-            <a href="#contact" className="inline-flex items-center justify-center rounded-full border border-orange-200 bg-orange-50 px-4 py-2 text-sm font-bold text-orange-700 transition hover:bg-orange-100">
-              Request a quote
-            </a>
-          </div>
+        <OfferBanners />
 
-          <div className="grid gap-6 md:grid-cols-3">
-            {offers.map((offer) => (
-              <article key={offer.name} className="rounded-[2rem] border border-orange-100 bg-gradient-to-br from-orange-50 to-white p-6 shadow-[0_18px_45px_rgba(120,53,15,0.07)]">
-                <div className="mb-5 flex items-center justify-between">
-                  <span className="rounded-full bg-[#fef3c7] px-2.5 py-1 text-[10px] font-bold uppercase tracking-[0.18em] text-[#92400e]">
-                    {offer.tag}
-                  </span>
-                  <span className="text-2xl font-black text-[#b45309]">{offer.price}</span>
-                </div>
-                <h3 className="text-xl font-black text-stone-900">{offer.name}</h3>
-                <p className="mt-3 text-base leading-7 text-stone-600">
-                  Brighter, safer, and more festive with premium crackers for your entire family gathering.
-                </p>
-                <button className="mt-6 inline-flex rounded-full bg-stone-900 px-4 py-2.5 text-sm font-bold text-white transition hover:bg-stone-700">
-                  Grab Offer
-                </button>
-              </article>
-            ))}
-          </div>
-        </section>
-
-        <section id="contact" className="bg-[#fff7ed]">
-          <div className="mx-auto grid max-w-7xl gap-8 px-4 py-16 sm:px-6 lg:grid-cols-[1fr_0.8fr] lg:px-8">
-            <div>
-              <p className="text-sm font-bold uppercase tracking-[0.24em] text-orange-600">Contact</p>
-              <h2 className="mt-4 text-3xl font-black text-stone-900 sm:text-4xl">
-                Plan your festive order with Lakshmi Agency.
-              </h2>
-              <p className="mt-4 max-w-xl text-base leading-7 text-stone-600">
-                Visit our Sivakasi store or call for customized bulk orders, family packs, and Diwali specials.
-              </p>
-            </div>
-
-            <div className="rounded-[2rem] border border-orange-200 bg-white p-6 shadow-[0_18px_45px_rgba(120,53,15,0.08)]">
-              <div className="space-y-4 text-base text-stone-700">
-                <p><span className="font-black text-stone-900">Phone:</span> +91 98765 43210</p>
-                <p><span className="font-black text-stone-900">Address:</span> Lakshmi Agency, Sivakasi, Tamil Nadu</p>
-                <p><span className="font-black text-stone-900">Hours:</span> 9:00 AM – 9:00 PM</p>
-              </div>
-              <a
-                href="tel:+919876543210"
-                className="mt-6 inline-flex w-full items-center justify-center rounded-full bg-[#b45309] px-5 py-3 text-sm font-bold text-white transition hover:bg-[#933d08]"
-              >
-                Call Now
-              </a>
-            </div>
-          </div>
-        </section>
+        <ContactSection />
       </main>
     </div>
   );

@@ -55,7 +55,7 @@ export default function AppHeader() {
             <div className="flex items-center gap-2 sm:gap-3">
               <a
                 href="#contact"
-                className="hidden rounded-full bg-[#b45309] px-4 py-2 text-[11px] font-bold text-white shadow-md shadow-orange-200/80 transition hover:bg-[#933d08] sm:inline-flex"
+                className="hidden rounded-full bg-[#b45309] px-4 py-2 text-[14px] font-bold text-white shadow-md shadow-orange-200/80 transition hover:bg-[#933d08] sm:inline-flex"
               >
                 Order Now
               </a>
