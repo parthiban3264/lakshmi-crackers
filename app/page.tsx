@@ -15,57 +15,6 @@ const offers = [
 export default function Home() {
   return (
     <div className="min-h-screen bg-[#fffaf2] text-stone-900">
-      <header className="sticky top-0 z-50 border-b border-orange-200/80 bg-[#fffaf2]/90 backdrop-blur-md">
-        <div className="mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 py-4 sm:px-6 lg:px-8">
-          <div className="flex items-center gap-3">
-            <div className="flex h-11 w-11 items-center justify-center rounded-full bg-gradient-to-br from-orange-500 to-red-600 text-lg font-black text-white shadow-lg shadow-orange-200">
-              L
-            </div>
-            <div>
-              <p className="text-base font-black uppercase tracking-[0.12em] text-[#b45309] sm:text-lg">
-                Lakshmiagency
-              </p>
-              <p className="text-[10px] font-semibold uppercase tracking-[0.28em] text-stone-500">
-                Sivakasi
-              </p>
-            </div>
-          </div>
-
-          <nav className="hidden items-center justify-center gap-2 rounded-full border border-orange-200 bg-white/80 px-3 py-2 shadow-sm md:flex">
-            {navItems.map((item) => (
-              <a
-                key={item}
-                href={item === "Home" ? "#home" : item === "About" ? "#about" : item === "List" ? "#list" : item === "Contact" ? "#contact" : "#offers"}
-                className="rounded-full px-3 py-2 text-sm font-semibold text-stone-700 transition hover:bg-orange-50 hover:text-orange-700"
-              >
-                {item}
-              </a>
-            ))}
-          </nav>
-
-          <a
-            href="#contact"
-            className="hidden rounded-full bg-[#b45309] px-4 py-2 text-sm font-bold text-white shadow-md shadow-orange-200 transition hover:bg-[#933d08] sm:inline-flex"
-          >
-            Order Now
-          </a>
-        </div>
-
-        <nav className="border-t border-orange-100 bg-white/80 md:hidden">
-          <div className="mx-auto flex max-w-7xl gap-2 overflow-x-auto px-4 py-3 text-sm font-semibold text-stone-700">
-            {navItems.map((item) => (
-              <a
-                key={item}
-                href={item === "Home" ? "#home" : item === "About" ? "#about" : item === "List" ? "#list" : item === "Contact" ? "#contact" : "#offers"}
-                className="whitespace-nowrap rounded-full border border-orange-200 bg-orange-50 px-3 py-2"
-              >
-                {item}
-              </a>
-            ))}
-          </div>
-        </nav>
-      </header>
-
       <main id="home">
         <section className="relative isolate overflow-hidden">
           <video

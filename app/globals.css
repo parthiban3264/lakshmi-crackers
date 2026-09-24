@@ -16,6 +16,18 @@ html {
   scroll-behavior: smooth;
 }
 
+@keyframes diwaliFloat {
+  0%,
+  100% {
+    transform: translateY(0) scale(1);
+    filter: drop-shadow(0 8px 18px rgba(245, 158, 11, 0.2));
+  }
+  50% {
+    transform: translateY(-6px) scale(1.04);
+    filter: drop-shadow(0 14px 22px rgba(251, 146, 60, 0.25));
+  }
+}
+
 body {
   margin: 0;
   background: var(--background);
