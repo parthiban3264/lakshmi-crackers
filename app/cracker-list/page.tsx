@@ -220,7 +220,7 @@ export default function CrackerListPage() {
   }, [quantities]);
 
   const generateWhatsAppUrl = () => {
-    const phoneNumber = "918056903264";
+    const phoneNumber = "918675718487";
     let message = `*✨ DIWALI CRACKER ORDER REQUEST - LAKSHMI AGENCY ✨*\n\n`;
 
     const selectedList = Object.entries(quantities)
@@ -248,72 +248,72 @@ export default function CrackerListPage() {
   return (
     <div className="min-h-screen bg-[#fffaf2] text-stone-900 selection:bg-orange-200">
       {/* Top Festive Brand Banner */}
-      <section className="relative overflow-hidden bg-gradient-to-b from-[#fff2e0] via-[#fffaf2] to-[#fffaf2] px-4 pt-10 pb-8 sm:px-6 lg:px-8">
+      <section className="relative overflow-hidden bg-gradient-to-b from-[#fff2e0] via-[#fffaf2] to-[#fffaf2] px-3.5 pt-6 pb-6 sm:px-6 sm:pt-10 sm:pb-8 lg:px-8">
         <div className="mx-auto max-w-6xl text-center">
-          <div className="mx-auto mb-4 inline-flex items-center gap-2 rounded-full border border-orange-300/80 bg-orange-100/70 px-4 py-1.5 shadow-sm">
+          <div className="mx-auto mb-3 inline-flex items-center gap-1.5 rounded-full border border-orange-300/80 bg-orange-100/70 px-3 py-1 shadow-sm sm:gap-2 sm:px-4 sm:py-1.5">
             <span className="h-2 w-2 animate-pulse rounded-full bg-orange-600" />
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#b45309]">
+            <span className="text-[10px] font-bold uppercase tracking-[0.16em] text-[#b45309] sm:text-xs sm:tracking-[0.2em]">
               Sivakasi Direct Crackers • Up to 80% Discount
             </span>
           </div>
 
-          <h1 className="text-3xl font-black tracking-tight text-stone-900 sm:text-5xl">
+          <h1 className="text-2xl font-black tracking-tight text-stone-900 sm:text-4xl lg:text-5xl">
             Lakshmi Agency Fireworks
           </h1>
-          <p className="mx-auto mt-3 max-w-2xl text-sm font-medium text-stone-600 sm:text-base">
-            Original Sivakasi crackers with mega 80% festival discount. Select your favorite items, view live totals, and order directly on WhatsApp!
+          <p className="mx-auto mt-2 max-w-2xl text-xs font-medium text-stone-600 sm:mt-3 sm:text-base">
+            Original Sivakasi crackers with mega 80% festival discount. Select items, view live totals, and order directly on WhatsApp!
           </p>
 
-          {/* Quick Highlights Bar */}
-          <div className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-4 max-w-4xl mx-auto">
-            <div className="rounded-2xl border border-orange-200 bg-white/90 p-3 shadow-sm">
-              <span className="text-xs font-bold text-orange-700 uppercase tracking-wider block">Discount</span>
-              <span className="text-xl font-black text-stone-900">Up to 80% OFF</span>
+          {/* Highlights Bar */}
+          <div className="mt-4 grid grid-cols-2 gap-2 sm:mt-6 sm:grid-cols-4 sm:gap-3 max-w-4xl mx-auto">
+            <div className="rounded-xl sm:rounded-2xl border border-orange-200 bg-white/90 p-2 sm:p-3 shadow-xs">
+              <span className="text-[10px] sm:text-xs font-bold text-orange-700 uppercase tracking-wider block">Discount</span>
+              <span className="text-sm sm:text-xl font-black text-stone-900">Up to 80% OFF</span>
             </div>
-            <div className="rounded-2xl border border-orange-200 bg-white/90 p-3 shadow-sm">
-              <span className="text-xs font-bold text-orange-700 uppercase tracking-wider block">Door Delivery</span>
-              <span className="text-xl font-black text-stone-900">Chennai & TN</span>
+            <div className="rounded-xl sm:rounded-2xl border border-orange-200 bg-white/90 p-2 sm:p-3 shadow-xs">
+              <span className="text-[10px] sm:text-xs font-bold text-orange-700 uppercase tracking-wider block">Door Delivery</span>
+              <span className="text-sm sm:text-xl font-black text-stone-900">Chennai & TN</span>
             </div>
-            <div className="rounded-2xl border border-orange-200 bg-white/90 p-3 shadow-sm">
-              <span className="text-xs font-bold text-orange-700 uppercase tracking-wider block">Min. Order</span>
-              <span className="text-xl font-black text-stone-900">₹2,000</span>
+            <div className="rounded-xl sm:rounded-2xl border border-orange-200 bg-white/90 p-2 sm:p-3 shadow-xs">
+              <span className="text-[10px] sm:text-xs font-bold text-orange-700 uppercase tracking-wider block">Min. Order</span>
+              <span className="text-sm sm:text-xl font-black text-stone-900">₹2,000</span>
             </div>
-            <div className="rounded-2xl border border-orange-200 bg-white/90 p-3 shadow-sm">
-              <span className="text-xs font-bold text-orange-700 uppercase tracking-wider block">Orders & GPay</span>
-              <span className="text-base sm:text-lg font-black text-[#b45309]">8675718487</span>
+            <div className="rounded-xl sm:rounded-2xl border border-orange-200 bg-white/90 p-2 sm:p-3 shadow-xs">
+              <span className="text-[10px] sm:text-xs font-bold text-orange-700 uppercase tracking-wider block">Orders & GPay</span>
+              <span className="text-xs sm:text-base lg:text-lg font-black text-[#b45309]">8675718487</span>
             </div>
           </div>
         </div>
       </section>
 
       {/* Main Content Area */}
-      <main className="mx-auto max-w-7xl px-4 py-4 sm:px-6 lg:px-8 pb-32">
+      <main className="mx-auto max-w-7xl px-3 sm:px-6 lg:px-8 pb-32 sm:pb-36">
         {/* Controls: Search and Categories */}
-        <div className="sticky top-3 z-30 mb-6 space-y-3 rounded-2xl border border-orange-200/90 bg-[#fffaf2]/95 p-3 shadow-md backdrop-blur-md">
-          <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+        <div className="sticky top-2 sm:top-3 z-30 mb-4 sm:mb-6 space-y-2.5 sm:space-y-3 rounded-2xl border border-orange-200/90 bg-[#fffaf2]/95 p-2.5 sm:p-3 shadow-md backdrop-blur-md">
+          <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
             {/* Search Box */}
             <div className="relative flex-1">
               <input
                 type="text"
-                placeholder="Search crackers (e.g. Flower Pots, Sparklers, 240 Shot)..."
+                placeholder="Search crackers (e.g. Flower Pots, 240 Shot)..."
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
-                className="w-full rounded-full border border-orange-200 bg-white px-5 py-2.5 pl-11 text-sm font-medium text-stone-800 placeholder-stone-400 outline-none transition focus:border-orange-500 focus:ring-2 focus:ring-orange-200"
+                className="w-full rounded-full border border-orange-200 bg-white py-2 pl-9 pr-8 text-xs font-medium text-stone-800 placeholder-stone-400 outline-none transition focus:border-orange-500 focus:ring-2 focus:ring-orange-200 sm:py-2.5 sm:pl-11 sm:text-sm"
               />
-              <span className="absolute left-4 top-2.5 text-orange-500">🔍</span>
+              <span className="absolute left-3 top-2 sm:left-4 sm:top-2.5 text-xs sm:text-sm text-orange-500">🔍</span>
               {search && (
                 <button
                   onClick={() => setSearch("")}
-                  className="absolute right-3.5 top-2.5 text-xs font-bold text-stone-400 hover:text-stone-600"
+                  className="absolute right-3 top-2 sm:right-3.5 sm:top-2.5 text-xs font-bold text-stone-400 hover:text-stone-600"
                 >
                   ✕
                 </button>
               )}
             </div>
 
-            {/* Quick Summary Pill */}
+            {/* Quick Summary Badge (Desktop & Tablet) */}
             {totalItems > 0 && (
-              <div className="flex items-center gap-3 self-end sm:self-center bg-orange-100 border border-orange-200 px-4 py-2 rounded-full">
+              <div className="hidden sm:flex items-center gap-3 self-center bg-orange-100 border border-orange-200 px-4 py-2 rounded-full">
                 <span className="text-xs font-bold text-stone-700">
                   {totalItems} items selected
                 </span>
@@ -324,15 +324,15 @@ export default function CrackerListPage() {
             )}
           </div>
 
-          {/* Category Filter Pills */}
-          <div className="flex gap-2 overflow-x-auto pb-1 text-xs font-bold scrollbar-none">
+          {/* Category Filter Horizontal Pills */}
+          <div className="flex gap-1.5 overflow-x-auto pb-1 text-[11px] sm:text-xs font-bold scrollbar-none [scrollbar-width:none] [-ms-overflow-style:none] [-webkit-overflow-scrolling:touch]">
             {CATEGORIES.map((cat) => (
               <button
                 key={cat}
                 onClick={() => setSelectedCategory(cat)}
-                className={`whitespace-nowrap rounded-full px-3.5 py-1.5 transition ${
+                className={`whitespace-nowrap rounded-full px-3 py-1 sm:px-3.5 sm:py-1.5 transition ${
                   selectedCategory === cat
-                    ? "bg-[#b45309] text-white shadow-sm"
+                    ? "bg-[#b45309] text-white shadow-xs"
                     : "border border-orange-200 bg-white text-stone-600 hover:bg-orange-50 hover:text-orange-900"
                 }`}
               >
@@ -342,8 +342,102 @@ export default function CrackerListPage() {
           </div>
         </div>
 
-        {/* Crackers Table / Grid */}
-        <div className="overflow-hidden rounded-2xl border border-orange-200/90 bg-white shadow-[0_10px_30px_rgba(180,83,9,0.06)]">
+        {/* 1. Mobile Product Card List (< sm breakpoint) */}
+        <div className="grid grid-cols-1 gap-2.5 sm:hidden">
+          {filteredItems.length === 0 ? (
+            <div className="rounded-xl border border-orange-200 bg-white py-10 text-center text-xs text-stone-400">
+              No crackers found matching &quot;{search}&quot;.
+            </div>
+          ) : (
+            filteredItems.map((item) => {
+              const qty = quantities[item.id] || 0;
+              return (
+                <div
+                  key={item.id}
+                  className={`rounded-xl border p-3 transition shadow-2xs ${
+                    qty > 0
+                      ? "border-orange-400 bg-orange-50/50"
+                      : "border-orange-200/90 bg-white"
+                  }`}
+                >
+                  <div className="flex items-start justify-between gap-2">
+                    <div className="flex-1">
+                      <div className="flex items-center gap-1.5">
+                        <span className="rounded-sm bg-orange-100 px-1.5 py-0.5 text-[9px] font-bold text-orange-800">
+                          #{item.id}
+                        </span>
+                        <span className="rounded-sm bg-stone-100 px-1.5 py-0.5 text-[9px] font-semibold text-stone-600">
+                          {item.unit}
+                        </span>
+                      </div>
+                      <h2 className="mt-1 text-sm font-bold text-stone-900 leading-tight">
+                        {item.name}
+                      </h2>
+                      <p className="text-[10px] font-medium text-orange-700/80">
+                        {item.category}
+                      </p>
+                    </div>
+
+                    {/* Price Block */}
+                    <div className="text-right">
+                      <span className="block text-[11px] font-semibold text-stone-400 line-through">
+                        ₹{item.originalPrice}
+                      </span>
+                      <span className="block text-base font-black text-[#b45309] leading-none">
+                        ₹{item.discountedPrice}
+                      </span>
+                    </div>
+                  </div>
+
+                  {/* Quantity Stepper Bar */}
+                  <div className="mt-2.5 flex items-center justify-between border-t border-orange-100/80 pt-2">
+                    <span className="text-[10px] font-semibold text-stone-500">
+                      {qty > 0 ? (
+                        <span className="font-bold text-[#b45309]">
+                          Subtotal: ₹{(qty * item.discountedPrice).toLocaleString("en-IN")}
+                        </span>
+                      ) : (
+                        "Tap add to select"
+                      )}
+                    </span>
+
+                    {qty === 0 ? (
+                      <button
+                        onClick={() => updateQuantity(item.id, 1)}
+                        className="rounded-full border border-orange-300 bg-orange-50 px-4 py-1.5 text-xs font-bold text-orange-800 transition active:scale-95"
+                      >
+                        + Add
+                      </button>
+                    ) : (
+                      <div className="inline-flex items-center gap-1.5 rounded-full border border-orange-300 bg-white p-1 shadow-2xs">
+                        <button
+                          onClick={() => updateQuantity(item.id, -1)}
+                          className="flex h-7 w-7 items-center justify-center rounded-full bg-orange-100 text-xs font-black text-orange-900 active:scale-90"
+                          aria-label="Decrease quantity"
+                        >
+                          -
+                        </button>
+                        <span className="w-6 text-center text-xs font-black text-stone-900">
+                          {qty}
+                        </span>
+                        <button
+                          onClick={() => updateQuantity(item.id, 1)}
+                          className="flex h-7 w-7 items-center justify-center rounded-full bg-[#b45309] text-xs font-black text-white active:scale-90"
+                          aria-label="Increase quantity"
+                        >
+                          +
+                        </button>
+                      </div>
+                    )}
+                  </div>
+                </div>
+              );
+            })
+          )}
+        </div>
+
+        {/* 2. Desktop & Tablet Table (>= sm breakpoint) */}
+        <div className="hidden sm:block overflow-hidden rounded-2xl border border-orange-200/90 bg-white shadow-[0_10px_30px_rgba(180,83,9,0.06)]">
           <div className="overflow-x-auto">
             <table className="w-full text-left text-sm text-stone-700">
               <thead className="border-b border-orange-200 bg-orange-50/70 text-xs font-bold uppercase tracking-wider text-orange-900">
@@ -375,39 +469,28 @@ export default function CrackerListPage() {
                           qty > 0 ? "bg-orange-50/30" : ""
                         }`}
                       >
-                        {/* ID */}
                         <td className="px-3 py-3 text-center text-xs font-bold text-stone-400">
                           {item.id}
                         </td>
-
-                        {/* Name & Category */}
                         <td className="px-4 py-3">
                           <div className="font-bold text-stone-900">{item.name}</div>
                           <div className="text-[11px] font-semibold text-orange-600/80">
                             {item.category}
                           </div>
                         </td>
-
-                        {/* Unit */}
                         <td className="px-3 py-3 text-center text-xs font-semibold text-stone-600">
                           <span className="inline-block rounded-md bg-stone-100 px-2 py-0.5">
                             {item.unit}
                           </span>
                         </td>
-
-                        {/* Original MRP */}
                         <td className="px-3 py-3 text-right font-medium text-stone-400 line-through">
                           ₹{item.originalPrice}
                         </td>
-
-                        {/* Discounted Price */}
                         <td className="px-3 py-3 text-right">
                           <span className="text-base font-black text-[#b45309]">
                             ₹{item.discountedPrice}
                           </span>
                         </td>
-
-                        {/* Quantity Controls */}
                         <td className="px-4 py-3 text-center">
                           {qty === 0 ? (
                             <button
@@ -417,7 +500,7 @@ export default function CrackerListPage() {
                               + Add
                             </button>
                           ) : (
-                            <div className="inline-flex items-center gap-1 rounded-full border border-orange-300 bg-white p-0.5 shadow-sm">
+                            <div className="inline-flex items-center gap-1 rounded-full border border-orange-300 bg-white p-0.5 shadow-xs">
                               <button
                                 onClick={() => updateQuantity(item.id, -1)}
                                 className="h-6 w-6 rounded-full bg-orange-100 text-xs font-black text-orange-900 hover:bg-orange-200"
@@ -447,44 +530,48 @@ export default function CrackerListPage() {
           </div>
         </div>
 
-        {/* Terms & Important Information Card */}
-        <div className="mt-8 rounded-2xl border border-orange-200 bg-white p-6 shadow-sm">
-          <h2 className="text-lg font-black text-stone-900 flex items-center gap-2">
+        {/* Terms & Conditions Card */}
+        <div className="mt-6 sm:mt-8 rounded-2xl border border-orange-200 bg-white p-4 sm:p-6 shadow-xs">
+          <h2 className="text-base sm:text-lg font-black text-stone-900 flex items-center gap-2">
             <span>📋</span> Terms and Conditions
           </h2>
           <ul className="mt-3 grid gap-2 text-xs sm:text-sm text-stone-600 sm:grid-cols-2">
             <li className="flex items-start gap-2">
               <span className="text-orange-500 font-bold">•</span>
-              Products once sold will not be exchanged or returned.
+              Products once sold will not be exchanged or returned[cite: 3].
             </li>
             <li className="flex items-start gap-2">
               <span className="text-orange-500 font-bold">•</span>
-              Minimum order value is <strong>₹2,000</strong>. Transport charges extra.
+              Minimum order value is <strong>₹2,000</strong>[cite: 3]. Transport charges extra[cite: 3].
             </li>
             <li className="flex items-start gap-2">
               <span className="text-orange-500 font-bold">•</span>
-              Last date of booking is <strong>31/10/2026</strong> due to rain & transport rush.
+              Last date of booking is <strong>31/10/2026</strong> due to rain season and huge rush in transport[cite: 3].
             </li>
             <li className="flex items-start gap-2">
               <span className="text-orange-500 font-bold">•</span>
-              Google Pay / PhonePe: <strong>8675718487 / 8012772734</strong>.
+              Google Pay / PhonePe number: <strong>8675718487 / 8012772734</strong>[cite: 3].
             </li>
             <li className="flex items-start gap-2 sm:col-span-2">
               <span className="text-orange-500 font-bold">•</span>
-              Address: 4/444 D Ayyanar Colony, Near ARD Mahal, Sivakasi.
+              Address: 4/444 D Ayyanar Colony, Near ARD Mahal, Sivakasi[cite: 3].
             </li>
           </ul>
         </div>
       </main>
 
-      {/* Floating WhatsApp Order Button */}
-      <aside aria-label="Order actions" className="fixed bottom-5 right-5 z-50 flex flex-col items-end gap-2 sm:bottom-6 sm:right-6">
+      {/* Floating WhatsApp Action Button */}
+      <aside
+        aria-label="Order actions"
+        className="fixed bottom-4 right-3 z-50 flex max-w-[calc(100vw-24px)] flex-col items-end gap-1.5 pb-[env(safe-area-inset-bottom,0px)] sm:bottom-6 sm:right-6 sm:max-w-none sm:gap-2"
+      >
+        {/* Floating Total Pill when items are selected */}
         {totalItems > 0 && (
-          <div className="rounded-2xl border border-orange-200 bg-white px-4 py-2 shadow-xl backdrop-blur-md animate-bounce">
-            <p className="text-xs font-bold text-stone-600">
+          <div className="max-w-full truncate rounded-full border border-orange-200 bg-white/95 px-3 py-1 shadow-lg backdrop-blur-md animate-bounce sm:px-4 sm:py-2">
+            <p className="text-[11px] font-bold text-stone-700 sm:text-xs">
               Total: <span className="font-black text-[#b45309]">₹{totalPrice.toLocaleString("en-IN")}</span>
               {totalSavings > 0 && (
-                <span className="ml-1.5 text-[10px] text-emerald-600 font-extrabold">
+                <span className="ml-1 text-[9px] font-extrabold text-emerald-600 sm:text-[10px]">
                   (Saved ₹{totalSavings.toLocaleString("en-IN")})
                 </span>
               )}
@@ -492,33 +579,32 @@ export default function CrackerListPage() {
           </div>
         )}
 
+        {/* Floating Button */}
         <a
           href={generateWhatsAppUrl()}
           target="_blank"
           rel="noopener noreferrer"
-          className="group flex items-center gap-3 rounded-full bg-gradient-to-r from-emerald-500 to-green-600 px-5 py-3.5 text-white shadow-[0_12px_30px_rgba(16,185,129,0.4)] transition-all hover:scale-105 hover:shadow-[0_15px_35px_rgba(16,185,129,0.5)] focus:ring-4 focus:ring-green-300"
+          className="group flex max-w-full items-center gap-2 rounded-full bg-gradient-to-r from-emerald-500 to-green-600 py-2 px-3 text-white shadow-[0_10px_25px_rgba(16,185,129,0.45)] transition-all active:scale-95 hover:scale-105 hover:shadow-[0_14px_30px_rgba(16,185,129,0.55)] focus:ring-4 focus:ring-green-300 sm:gap-3 sm:px-5 sm:py-3.5"
         >
-          {/* WhatsApp SVG Icon */}
-          <div className="relative">
-            <svg
-              className="h-6 w-6 fill-current"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
+          {/* WhatsApp Icon with Badge */}
+          <div className="relative shrink-0 flex items-center justify-center">
+            <svg className="h-5 w-5 fill-current sm:h-6 sm:w-6" viewBox="0 0 24 24">
               <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
             </svg>
             {totalItems > 0 && (
-              <span className="absolute -top-2 -right-2 flex h-5 w-5 items-center justify-center rounded-full bg-red-600 text-[10px] font-black text-white ring-2 ring-white">
+              <span className="absolute -top-1.5 -right-1.5 flex h-4 w-4 sm:h-5 sm:w-5 items-center justify-center rounded-full bg-red-600 text-[9px] sm:text-[10px] font-black text-white ring-2 ring-white">
                 {totalItems}
               </span>
             )}
           </div>
-          <div className="text-left">
-            <span className="block text-xs font-semibold uppercase tracking-wider text-green-100">
+
+          {/* Text Label */}
+          <div className="text-left shrink-0">
+            <span className="block text-[8px] font-semibold uppercase tracking-wider text-green-100 sm:text-[10px]">
               {totalItems > 0 ? "Order on WhatsApp" : "Quick Order"}
             </span>
-            <span className="block text-sm font-black leading-none">
-              WhatsApp Us
+            <span className="block text-xs font-black leading-none sm:text-sm">
+              WhatsApp
             </span>
           </div>
         </a>
