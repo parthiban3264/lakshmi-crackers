@@ -52,8 +52,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           </div>
           </div>
           {children}
+          <Footer/>
       </body>
-      <Footer/>
+      
     </html>
   );
 }
