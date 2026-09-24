@@ -1,0 +1,13 @@
+@keyframes offer-marquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.offer-marquee {
+  animation: offer-marquee 28s linear infinite;
+}
