@@ -35,15 +35,19 @@ export default function RootLayout({
     >
       <body className="flex min-h-screen w-full flex-col overflow-x-hidden bg-[#fffaf2] text-stone-900">
         {/* =====================================================
-            HEADER
+            STICKY HEADER
         ====================================================== */}
 
-        <div className="w-full">
+        <div className="sticky top-0 z-50 w-full">
           {/* ================= DESKTOP ================= */}
+
           <div className="hidden w-full items-center lg:flex">
             {/* LEFT FLOWERPOT */}
             <div className="shrink-0">
-              <DiwaliFlowerpot scale={0.15} active={true} />
+              <DiwaliFlowerpot
+                scale={0.15}
+                active={true}
+              />
             </div>
 
             {/* APP HEADER */}
@@ -53,16 +57,23 @@ export default function RootLayout({
 
             {/* RIGHT FLOWERPOT */}
             <div className="shrink-0">
-              <DiwaliFlowerpot scale={0.15} active={true} />
+              <DiwaliFlowerpot
+                scale={0.15}
+                active={true}
+              />
             </div>
           </div>
 
           {/* ================= MOBILE ================= */}
+
           <div className="flex w-full items-center lg:hidden">
             {/* LEFT FLOWERPOT */}
             <div className="flex w-8 shrink-0 items-center justify-center overflow-visible">
               <div className="origin-center scale-[0.35]">
-                <DiwaliFlowerpot scale={0.15} active={true} />
+                <DiwaliFlowerpot
+                  scale={0.15}
+                  active={true}
+                />
               </div>
             </div>
 
@@ -74,7 +85,10 @@ export default function RootLayout({
             {/* RIGHT FLOWERPOT */}
             <div className="flex w-8 shrink-0 items-center justify-center overflow-visible">
               <div className="origin-center scale-[0.35]">
-                <DiwaliFlowerpot scale={0.15} active={true} />
+                <DiwaliFlowerpot
+                  scale={0.15}
+                  active={true}
+                />
               </div>
             </div>
           </div>
@@ -84,7 +98,9 @@ export default function RootLayout({
             MAIN CONTENT
         ====================================================== */}
 
-        <main className="min-w-0 w-full flex-1">{children}</main>
+        <main className="min-w-0 w-full flex-1">
+          {children}
+        </main>
 
         {/* =====================================================
             FOOTER
