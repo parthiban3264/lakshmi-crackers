@@ -1,14 +1,14 @@
-
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 
 const navItems = [
-  { label: "Home", icon: "⌂", href: "#home" },
-  { label: "About", icon: "✦", href: "#about" },
-  { label: "List", icon: "☰", href: "#list" },
-  { label: "Contact", icon: "✆", href: "#contact" },
-  { label: "Latest Offers", icon: "⚡", href: "#offers" },
+  { label: "Home", icon: "⌂", href: "/#home" },
+  { label: "About", icon: "✦", href: "/#about" },
+  { label: "List", icon: "☰", href: "/cracker-list" }, // Directs to your cracker list page
+  { label: "Contact", icon: "✆", href: "/#contact" },
+  { label: "Latest Offers", icon: "⚡", href: "/#offers" },
 ];
 
 export default function AppHeader() {
@@ -16,13 +16,11 @@ export default function AppHeader() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-orange-200/60 bg-[#fffaf2]/90 backdrop-blur-xl">
-
       {/* ================================================= */}
       {/* MAIN HEADER */}
       {/* ================================================= */}
 
       <div className="mx-auto w-full max-w-7xl px-2 py-2.5 sm:px-4 sm:py-3 lg:px-6 lg:py-4">
-
         <div
           className="
             flex w-full items-center justify-between
@@ -36,13 +34,12 @@ export default function AppHeader() {
             lg:px-5
           "
         >
-
           {/* ================================================= */}
           {/* LOGO */}
           {/* ================================================= */}
 
-          <a
-            href="#home"
+          <Link
+            href="/"
             className="flex min-w-0 shrink-0 items-center gap-2.5 sm:gap-3"
           >
             {/* Logo Icon */}
@@ -97,7 +94,7 @@ export default function AppHeader() {
                 Sivakasi
               </span>
             </div>
-          </a>
+          </Link>
 
           {/* ================================================= */}
           {/* DESKTOP NAVIGATION */}
@@ -105,7 +102,7 @@ export default function AppHeader() {
 
           <nav className="hidden lg:flex items-center rounded-full bg-orange-50/80 p-1.5 shadow-inner shadow-orange-100">
             {navItems.map((item) => (
-              <a
+              <Link
                 key={item.label}
                 href={item.href}
                 className="
@@ -124,7 +121,7 @@ export default function AppHeader() {
                 "
               >
                 {item.label}
-              </a>
+              </Link>
             ))}
           </nav>
 
@@ -133,10 +130,9 @@ export default function AppHeader() {
           {/* ================================================= */}
 
           <div className="flex shrink-0 items-center gap-2">
-
             {/* Desktop Order Button */}
-            <a
-              href="#contact"
+            <Link
+              href="/#contact"
               className="
                 hidden
                 rounded-full
@@ -156,9 +152,9 @@ export default function AppHeader() {
               "
             >
               Order Now
-            </a>
+            </Link>
 
-            {/* Mobile / Tablet Menu */}
+            {/* Mobile / Tablet Menu Button */}
             <button
               type="button"
               aria-label={
@@ -215,7 +211,6 @@ export default function AppHeader() {
         `}
       >
         <div className="px-2 pb-3 sm:px-4 sm:pb-4">
-
           <div
             className="
               mx-auto
@@ -231,11 +226,10 @@ export default function AppHeader() {
               sm:p-3
             "
           >
-
             {/* Mobile Navigation */}
             <nav className="grid grid-cols-1 gap-1.5 sm:grid-cols-2 sm:gap-2">
               {navItems.map((item) => (
-                <a
+                <Link
                   key={item.label}
                   href={item.href}
                   onClick={() => setMobileMenuOpen(false)}
@@ -283,20 +277,16 @@ export default function AppHeader() {
                     {item.icon}
                   </span>
 
-                  <span className="truncate">
-                    {item.label}
-                  </span>
+                  <span className="truncate">{item.label}</span>
 
-                  <span className="ml-auto text-orange-300">
-                    →
-                  </span>
-                </a>
+                  <span className="ml-auto text-orange-300">→</span>
+                </Link>
               ))}
             </nav>
 
             {/* Mobile Order Button */}
-            <a
-              href="#contact"
+            <Link
+              href="/#contact"
               onClick={() => setMobileMenuOpen(false)}
               className="
                 mt-2.5
@@ -323,7 +313,7 @@ export default function AppHeader() {
               "
             >
               Order Now
-            </a>
+            </Link>
           </div>
         </div>
       </div>

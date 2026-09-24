@@ -531,33 +531,7 @@ export default function CrackerListPage() {
         </div>
 
         {/* Terms & Conditions Card */}
-        <div className="mt-6 sm:mt-8 rounded-2xl border border-orange-200 bg-white p-4 sm:p-6 shadow-xs">
-          <h2 className="text-base sm:text-lg font-black text-stone-900 flex items-center gap-2">
-            <span>📋</span> Terms and Conditions
-          </h2>
-          <ul className="mt-3 grid gap-2 text-xs sm:text-sm text-stone-600 sm:grid-cols-2">
-            <li className="flex items-start gap-2">
-              <span className="text-orange-500 font-bold">•</span>
-              Products once sold will not be exchanged or returned[cite: 3].
-            </li>
-            <li className="flex items-start gap-2">
-              <span className="text-orange-500 font-bold">•</span>
-              Minimum order value is <strong>₹2,000</strong>[cite: 3]. Transport charges extra[cite: 3].
-            </li>
-            <li className="flex items-start gap-2">
-              <span className="text-orange-500 font-bold">•</span>
-              Last date of booking is <strong>31/10/2026</strong> due to rain season and huge rush in transport[cite: 3].
-            </li>
-            <li className="flex items-start gap-2">
-              <span className="text-orange-500 font-bold">•</span>
-              Google Pay / PhonePe number: <strong>8675718487 / 8012772734</strong>[cite: 3].
-            </li>
-            <li className="flex items-start gap-2 sm:col-span-2">
-              <span className="text-orange-500 font-bold">•</span>
-              Address: 4/444 D Ayyanar Colony, Near ARD Mahal, Sivakasi[cite: 3].
-            </li>
-          </ul>
-        </div>
+    
       </main>
 
       {/* Floating WhatsApp Action Button */}
