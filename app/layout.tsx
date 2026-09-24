@@ -27,7 +27,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${geistSans.variable} ${geistMono.variable} h-full, antialiased`}
     >
       <body className="min-h-full flex flex-col bg-[#fffaf2] text-stone-900">
         
@@ -39,8 +39,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
               
             />
           </div>
-          
-          <AppHeader />
+          <div className="w-full">
+          <AppHeader/>
+          </div>
 
           <div className="flex items-center justify-center overflow-visible">
             <DiwaliFlowerpot
