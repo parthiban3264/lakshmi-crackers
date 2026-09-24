@@ -33,48 +33,64 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} antialiased`}
     >
-      <body className="flex min-h-screen flex-col overflow-x-hidden bg-[#fffaf2] text-stone-900">
+      <body className="flex min-h-screen w-full flex-col overflow-x-hidden bg-[#fffaf2] text-stone-900">
+        {/* =====================================================
+            HEADER
+        ====================================================== */}
 
-        {/* ================= HEADER AREA ================= */}
-        <div className="relative flex w-full items-center justify-center">
+        <div className="w-full">
+          {/* ================= DESKTOP ================= */}
+          <div className="hidden w-full items-center lg:flex">
+            {/* LEFT FLOWERPOT */}
+            <div className="shrink-0">
+              <DiwaliFlowerpot scale={0.15} active={true} />
+            </div>
 
-          {/* Left decoration - desktop/tablet */}
-          <div className="hidden shrink-0 items-center justify-center lg:flex">
-            <DiwaliFlowerpot
-              scale={0.11}
-              active={true}
-            />
+            {/* APP HEADER */}
+            <div className="min-w-0 flex-1">
+              <AppHeader />
+            </div>
+
+            {/* RIGHT FLOWERPOT */}
+            <div className="shrink-0">
+              <DiwaliFlowerpot scale={0.15} active={true} />
+            </div>
           </div>
 
-          {/* Header */}
-          <div className="min-w-0 flex-1">
-            <AppHeader />
-          </div>
+          {/* ================= MOBILE ================= */}
+          <div className="flex w-full items-center lg:hidden">
+            {/* LEFT FLOWERPOT */}
+            <div className="flex w-8 shrink-0 items-center justify-center overflow-visible">
+              <div className="origin-center scale-[0.35]">
+                <DiwaliFlowerpot scale={0.15} active={true} />
+              </div>
+            </div>
 
-          {/* Right decoration - desktop/tablet */}
-          <div className="hidden shrink-0 items-center justify-center lg:flex">
-            <DiwaliFlowerpot
-              scale={0.12}
-              active={true}
-            />
-          </div>
+            {/* APP HEADER */}
+            <div className="min-w-0 flex-1">
+              <AppHeader />
+            </div>
 
+            {/* RIGHT FLOWERPOT */}
+            <div className="flex w-8 shrink-0 items-center justify-center overflow-visible">
+              <div className="origin-center scale-[0.35]">
+                <DiwaliFlowerpot scale={0.15} active={true} />
+              </div>
+            </div>
+          </div>
         </div>
 
-        {/* Mobile decorative flowerpots */}
-        <div className="pointer-events-none absolute left-0 top-1/2 z-40 hidden -translate-y-1/2 sm:block lg:hidden">
-          <div className="scale-[0.65] origin-left">
-            <DiwaliFlowerpot
-              scale={0.12}
-              active={true}
-            />
-          </div>
-        </div>
+        {/* =====================================================
+            MAIN CONTENT
+        ====================================================== */}
 
-        <main className="min-w-0 flex-1">
-          {children}
-          </main>
-         <Footer/>
+        <main className="min-w-0 w-full flex-1">{children}</main>
+
+        {/* =====================================================
+            FOOTER
+        ====================================================== */}
+
+        <Footer />
       </body>
      
     </html>
