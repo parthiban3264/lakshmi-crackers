@@ -73,8 +73,10 @@ export default function RootLayout({
 
         <main className="min-w-0 flex-1">
           {children}
+          </main>
+         <Footer/>
       </body>
-      <Footer/>
+     
     </html>
   );
 }

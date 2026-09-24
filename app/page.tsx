@@ -22,7 +22,7 @@ export default function Home() {
 
           <div className="absolute inset-0 flex items-center">
             <div className="mx-auto grid w-full max-w-7xl gap-8 px-4 py-12 sm:px-6 lg:grid-cols-[1.2fr_0.8fr] lg:px-8">
-              <div className="max-w-xl">
+              <div className="max-w-xl ">
                 <p className="mb-4 inline-flex rounded-full border border-orange-300/60 bg-orange-100/20 px-4 py-2 text-xs font-bold uppercase tracking-[0.22em] text-orange-100">
                   Traditional Fireworks • Since 2005
                 </p>
