@@ -1,3 +1,4 @@
+import AboutSection from "../components/AboutSection";
 import ContactSection from "../components/ContactSection";
 import OfferBanners from "../components/OfferBanners";
 import PopularCrackers from "../components/PopularCrackers";
@@ -96,34 +97,7 @@ export default function Home() {
 
         <PopularCrackers />
 
-        <section id="about" className="bg-[#1d120b] py-16 text-white">
-          <div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[1fr_1.1fr] lg:px-8">
-            <div>
-              <p className="text-sm font-bold uppercase tracking-[0.24em] text-orange-300">About us</p>
-              <h2 className="mt-4 text-3xl font-black sm:text-4xl">
-                Trusted fireworks source from Sivakasi.
-              </h2>
-            </div>
-
-            <div className="space-y-5 text-base leading-7 text-orange-50/85">
-              <p>
-                We curate premium crackers designed for big family moments, temple festivals, and grand celebrations. Every collection is chosen for quality, brightness, and safe festive experience.
-              </p>
-              <div className="grid gap-4 sm:grid-cols-2">
-                {[
-                  "Safe, tested fireworks",
-                  "Bulk order availability",
-                  "Festive pricing offers",
-                  "Fast local delivery",
-                ].map((point) => (
-                  <div key={point} className="rounded-2xl border border-orange-500/30 bg-white/5 px-4 py-3 font-semibold text-orange-50">
-                    {point}
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </section>
+        <AboutSection />
 
         <OfferBanners />
 
